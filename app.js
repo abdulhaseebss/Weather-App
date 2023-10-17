@@ -6,7 +6,7 @@ div.style.display = 'none'
 
 form.addEventListener('submit' , function(e){
     e.preventDefault(); 
-    axios.get(`http://api.weatherapi.com/v1/current.json?key=27c33b52b37744b28d1164726231710&q=${input.value}`)
+    axios.get(`https://api.weatherapi.com/v1/current.json?key=27c33b52b37744b28d1164726231710&q=${input.value}`)
     .then((res)=>{
         const data = res.data
         console.log(data);
